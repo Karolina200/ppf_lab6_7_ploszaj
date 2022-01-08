@@ -1,14 +1,17 @@
 import "./App.css";
-import { CFooter } from "./components/CFooter";
-import CHeader from "./components/CHeader";
-import CContents from "./components/CContents";
+// eslint-disable-next-line no-unused-vars
+import CContents from './components/CContents';
+import { CFooter } from './components/CFooter'
+import CHeader from './components/CHeader'
+import COuter from "./components/COuter";
 
 function App() {
   return (
     <div className="App">
-      <CHeader aName="Jan" aFamily="Kowalski" />
+      <CHeader aName="Karolina" aFamily="Płoszaj" />
       {/*<CHeader aName="Tomasz" aFamily="Nowak"/>*/}
-      <CContents />
+     {/* <CContents />*/}
+     <COuter/>
       <CFooter weather="słoneczna" temp="25">
         <p>Niebo jest bezchumrne, wiatr słaby.</p>
       </CFooter>
