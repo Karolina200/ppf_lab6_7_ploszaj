@@ -36,4 +36,4 @@ React.createElement('h5',{id: 'footerText',className: 'footerTextClass'},
 'PPFront-end , przykładowy serwis React.Dzisiaj mamy: '+date.toDateString()));
 }*/
 
-export default CFooter;
+//export default CFooter;

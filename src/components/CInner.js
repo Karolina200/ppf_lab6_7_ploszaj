@@ -11,18 +11,32 @@ export default class CInner extends Component{
     }
     static getDerivedStateFromProps(props,state){
         console.log("CInner - getDerivedStateFromProps()")
-        return null
+        return null;
     }
 
     componentDidMount(){
-        console.log("CInner - componentDidMount()")
+        console.log("CInner - componentDidMount()");
     }
     render(){
-console.log("CInner - render()")
+console.log("CInner - render()");
 return(
     <div>
-        <h3>Komponent wewnętrzny</h3>
+       <h3 className='bgClassInner'>Komponent wewnętrzny</h3>
+       {/* <h3 className={styl.bgClassModule}>Komponent wewnętrzny</h3>*/}
     </div>
 )
     }
-}
+
+    shouldComponentUpdate(){
+        console.log("CInner - shouldComponentUpdate()")
+        return true
+    }
+    
+    getSnapshotBeforeUpdate(pprops,pstate){
+        console.log("CInner - getSnapshotBeforeUpdate()")
+        return null
+    }
+    componentDidUpdate(){
+        console.log("CInner - componentDidUpdate")
+    }
+    }

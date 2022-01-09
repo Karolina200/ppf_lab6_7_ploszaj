@@ -1,9 +1,8 @@
-import "./App.css";
-// eslint-disable-next-line no-unused-vars
+import "./App.css"
 import CContents from './components/CContents';
 import { CFooter } from './components/CFooter'
 import CHeader from './components/CHeader'
-import COuter from "./components/COuter";
+import COuter from './components/COuter'
 
 function App() {
   return (

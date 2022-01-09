@@ -8,10 +8,10 @@ class CHeader extends Component {
       <div className="headerContainer">
         <img src={logo} className="headerLogo" alt="logo" />
         <h2>
-          Witaj w naszym przykładowym serwisie {aName+" "+aFamily}
-        </h2>
+          Witaj w naszym przykładowym serwisie {aName+' '+aFamily}</h2>
       </div>
     );
   }
 }
-export default CHeader;
+
+export default CHeader

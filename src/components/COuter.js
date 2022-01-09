@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import CInner from './CInner'
-import '/.COuter.css'
-// eslint-disable-next-line no-unused-vars
-import styl from '/.COuter.module.css'
+import './COuter.css'
+import styl from './COuter.module.css'
 
 export default class COuter extends Component {
     constructor(props) {
@@ -26,7 +25,7 @@ render() {
     console.log("COuter - render()")
     return (
         <div className='bgClassNormal'>
-<h2>Komponent zewnętrzny</h2>
+<h2 className={styl.bgClassModule}>Komponent zewnętrzny</h2>
 <button onClick={this.stateChange}>Zmiana stanu</button>
 <CInner/>
     </div>
@@ -48,4 +47,5 @@ getSnapshotBeforeUpdate(pprops,pstate){
 componentDidUpdate(){
     console.log("COuter - componentDidUpdate")
 }
+
 }
