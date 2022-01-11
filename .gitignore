@@ -26,3 +26,4 @@ yarn-error.log*
 .setupTest.js
 .package-lock.json
 .package.json
+.App.test.js
